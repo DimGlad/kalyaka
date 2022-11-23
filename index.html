@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каляка-Маляка</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<form class='container'>
+		<div class="Main">
+			<div class="header">
+				<h1>Расчёт стоимости</h1>
+			</div>
+			<p>Месяц:
+				<select class="month">
+					<option value="" hidden>Выберите месяц</option>
+					<option value="600">Январь</option>
+					<option value="600">Февраль</option>
+					<option value="400">Март</option>
+					<option value="400">Апрель</option>
+					<option value="400">Май</option>
+					<option value="300">Июнь</option>
+					<option value="300">Июль</option>
+					<option value="300">Август</option>
+					<option value="400">Сентябрь</option>
+					<option value="400">Октябрь</option>
+					<option value="400">Ноябрь</option>
+					<option value="600">Декабрь</option>
+				</select></p>
+
+			<p>Стоимость 1 дня:
+				<input id="day" disabled></p>
+
+			<p>ФИО ребёнка:
+				<input type="text" class="child"></p>
+
+			<p>Количество дней:
+				<input type="text" class="days"></p>
+
+			<p>Дополнительная услуга:
+				<select class="service">
+					<option value="0">Без доп. услуг</option>
+					<option value="2000">Веселый мяч</option>
+					<option value="3000">Каляка-маляка</option>
+					<option value="2500">Вокал</option>
+				</select></p>
+
+			<div class="buttons">
+				<button type="button" class="calc">Расчёт</button>
+
+				<button type="reset" class="clear">Очистить</button>
+			</div>
+			<div style="visibility: hidden;" id="result">
+				<p>Сумма к оплате за месяц: <input id="sum" type="text" disabled></p>
+			</div>
+
+		</div>
+	</form>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
